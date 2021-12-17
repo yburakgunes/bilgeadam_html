@@ -1,0 +1,119 @@
+/* class */
+.bilgeadam_class {
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+/* id */
+#bilgeadam_id {
+  color: greenyellow;
+
+  /* important=zorunlu */
+  font-size: 2rem !important;
+}
+
+/* renklerde 0 (siyah)
+renkler f (f) */
+
+div {
+  width: 250px;
+  height: 200px;
+  color: yellow;
+  background-color: brown;
+  padding: 15px 25px 35px 42px;
+  margin-top: 12px;
+  border-top: 10px solid darkblue;
+  border-left: 10px solid darkblue;
+  border-radius: 50%;
+}
+
+/* important > inlinecss > internalcss > external */
+
+#unique {
+  font-size: 25px;
+  font-weight: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text4 {
+  margin-bottom: 55px;
+  text-align: justify;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-indent: 25px;
+  text-shadow: 0.5px 0.4px;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  word-spacing: 15px;
+  column-count: 3;
+  column-rule: 2px solid orangered;
+
+  /* height and width için inline block */
+  display: inline-block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ul li {
+  background: red;
+  margin-top: 5px;
+  text-align: center;
+  padding: 8px 0;
+}
+ul li:last-child {
+  background: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* divin içindeki tüm paragraflar */
+div > p {
+  color: yellow;
+}
+/* div aynı seviye */
+div ~ p {
+  color: blue;
+  font-size: 25px;
+}
+/* div aynı seviyede ilk p */
+div + p {
+  color: green;
+  font-size: 25px;
+}
+
+.click_me:link {
+  background-color: blue;
+  color: yellow;
+  padding: 25px;
+}
+
+.clink_me:hover {
+  background-color: yellow;
+  color: blue;
+  padding: 25px;
+}
+.clink_me:active {
+    background-color: orange;
+    color: purple;
+    padding: 25px;
+  }
+.clink_me:visited {
+    background-color: red;
+    color: blue;
+    padding: 25px;
+  }
+.div_shadow:hover{
+    box-shadow: 1px 2px 38px 12px salmon;
+}
