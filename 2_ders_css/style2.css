@@ -1,0 +1,95 @@
+/* F-A-R-S-S POSITION TYPES BABYYYYY
+F-fixed:Sabitliyor
+A-absolute 0,0 her şeyden bağımsız ayarlıyor
+R-body ye göre ayarlıyor kendini
+S-stick:aşağı yukarı scroll down ve ya up yaptığında kendini göstermeye devam ediyor
+S-static(Default)
+
+*/
+#back_to_top {
+  max-width: 40px;
+  height: 20px;
+  background: black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+#back_to_top a {
+  color: white;
+  margin: 2px 5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+img:hover {
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.7);
+  transition: 2s all;
+  object-fit: cover;
+  object-position: center;
+}
+
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.box_sizing {
+  background: lightblue;
+  height: (200px);
+  width: 305px;
+  padding: 20px;
+  border: 3px dotted red;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.box_sizing:hover {
+  height: 250px;
+  width: 400px;
+  background: black;
+  color: lightblue;
+  transition: 3s all;
+}
+
+div {
+  width: 24%;
+  height: 200px;
+  display: inline-block;
+}
+
+/* msi */
+/* break point 10<x<699 */
+@media (min-width: 10px) and (max-width:699px) {
+  .div1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) and (max-width:899px) {
+  .div1 {
+    width: 49%;
+  }
+}
+@media (min-width: 900px) and (max-width:1199px) {
+  .div1 {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px)  {
+  .div1 {
+    width: 24%;
+  }
+}
+/* absolute: sıfıra sıfır olarak kendine göre yerleştiriyor
+relative: 
+
+*/
+#paragraf {
+    border: 1px solid blueviolet;
+    position: sticky;
+    top: 3px;
+    background: white;
+}
